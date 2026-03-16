@@ -1,9 +1,10 @@
-name: Test Workflow
+name: Long Running Workflow
 
 concurrent: master
 
 jobs:
   test:
-    steps: 
-    - run: echo \"Hello\"
-      sleep: 60
+    steps:
+      - run: echo \"Hello\"
+      with:
+        steep: 60
